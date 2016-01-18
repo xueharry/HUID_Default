@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "HUID Default",
+  "description": "This extension switches the default authentication tab for Harvard PIN login to HUID",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+  "content_scripts": [
+  {
+    "matches": ["https://www.pin1.harvard.edu/*"],
+    "js": ["jquery-2.2.0.min.js","changetab.js"],
+    "run_at": "document_end"
+  }
+  ]
+}
