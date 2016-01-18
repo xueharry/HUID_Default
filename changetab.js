@@ -17,7 +17,11 @@ $(document).ready(function () {
 
 	// Change authentication source type in form
 	var sourceType = $("#compositeAuthenticationSourceType");
-	sourceType.attr("value", "PIN"); 
+	sourceType.attr("value", "PIN");
+
+	// Change text
+	$("#loginIdLabel").text("Harvard University ID (HUID):");
+
 });
 
 
